@@ -80,12 +80,20 @@ ORDER BY date
 
 ## EDA Highlights
 
-- **Organic Search** is the dominant traffic source (~40% of sessions)
-- **Direct** traffic has the highest conversion rate despite lower volume
-- Revenue spikes in **November–December** consistent with holiday seasonality
-- **Referral** and **Paid Search** show the highest Revenue per Session
-- Outlier check: <2% of daily rows exceed IQR × 1.5 bounds — no anomalies requiring removal
-
+- **Organic Search** dominates traffic (381K sessions, ~43% of total) but converts poorly
+  at only 0.94% — users are in research mode, not purchase mode
+- **Referral** is the highest-value channel: 5.29% conversion rate and $6.21 revenue
+  per session despite mid-tier volume (104K sessions) — it drives the most total revenue ($651K)
+- **Display** ads deliver the highest revenue per session at $12.51, suggesting
+  high-intent buyers with large basket sizes
+- **Social** generates 226K sessions (2nd largest channel) but only 0.06% conversion
+  rate and $0.02 revenue per session — strong for awareness, not for direct revenue
+- **Affiliates** underperform across all metrics: 16K sessions, 9 transactions, $597
+  total revenue — lowest ROI of any channel
+- Clear **seasonality spike** in Nov–Dec 2016 (Black Friday + holiday season), followed
+  by a sharp drop in January 2017, then stable lower traffic through mid-2017
+- Revenue distribution is highly skewed: mean $593/row but std $1,274 — a small number
+  of high-value sessions drive a disproportionate share of total revenue ($1.54M)
 ---
 
 ## Power BI Dashboard
